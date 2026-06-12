@@ -55,15 +55,16 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
                 backgroundColor: Theme.of(context).colorScheme.primary,
                 foregroundColor: Colors.white,
               ),
-              onPressed: () {
+              onPressed: () async {
                 final title = _titleController.text.trim();
                 final content = _contentController.text.trim();
 
                 if (title.isNotEmpty && content.isNotEmpty) {
-                  Provider.of<NoteController>(
+                  await Provider.of<NoteController>(
                     context,
                     listen: false,
                   ).addNote(title, content);
+
                   Navigator.pop(context);
                 }
               },
