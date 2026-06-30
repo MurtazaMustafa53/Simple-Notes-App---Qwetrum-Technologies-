@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:staticnotes/Controller/note_Controller.dart';
-import 'package:staticnotes/Veiw/Screens/HomeScreen.dart';
 import 'package:staticnotes/Veiw/Screens/LoginScreen.dart';
 
 void main() {
